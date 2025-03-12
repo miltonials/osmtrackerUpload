@@ -33,8 +33,7 @@ body:
     attributes:
       label: "Logs or Console Errors (if applicable)"
       description: |
-        Paste any relevant logs or error messages.
-        If available, please attach logs or error messages.  
+        If available, please paste or attach any relevant logs or error messages.  
         - On Android, you can use [adb logcat](https://developer.android.com/studio/command-line/logcat) to capture logs.
       render: "plaintext"
     validations:
