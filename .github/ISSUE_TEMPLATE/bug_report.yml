@@ -1,7 +1,7 @@
 name: "Bug Report"
 description: "Report an issue or bug with OSMTracker for Android."
 labels: "bug"
-type: "bug"
+issue_type: "Bug"
 body:
   - type: markdown
     attributes:
