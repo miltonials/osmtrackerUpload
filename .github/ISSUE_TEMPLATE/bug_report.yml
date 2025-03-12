@@ -1,10 +1,11 @@
 name: "Bug Report"
-description: "Report an issue or bug with OSMTracker."
-labels: "bug, needs-triage"
+description: "Report an issue or bug with OSMTracker for Android."
+labels: "bug"
 body:
   - type: markdown
     attributes:
-      value: "## Thank you for reporting a bug!\nPlease fill out the following details to help us diagnose the issue."
+      value: >
+      #### Thank you for reporting a bug! Before reporting, please have a look at the [Q&A](https://github.com/labexp/osmtracker-android/discussions/categories/q-a), make sure the issue has no duplicate and hasn't been already addressed by searching through [the existing and past issues](https://github.com/labexp/osmtracker-android/issues).\nPlease fill out the following details to help us diagnose the issue.
   
   - type: textarea
     id: description
@@ -19,7 +20,7 @@ body:
     id: steps_to_reproduce
     attributes:
       label: "Steps to Reproduce"
-      description: "List the steps to reproduce the issue."
+      description: "Please list the steps to reproduce the issue."
       value: |
         1. 
         2. 
@@ -32,7 +33,10 @@ body:
     id: logs
     attributes:
       label: "Logs or Console Errors (if applicable)"
-      description: "Paste any relevant logs or error messages."
+      description: |
+        Paste any relevant logs or error messages.
+        If available, please attach logs or error messages.  
+        - On Android, you can use [adb logcat](https://developer.android.com/studio/command-line/logcat) to capture logs.
       render: "plaintext"
     validations:
       required: false
@@ -44,7 +48,7 @@ body:
       description: "Attach any relevant screenshots or videos."
     validations:
       required: false
-  
+
   - type: input
     id: android_version
     attributes:
