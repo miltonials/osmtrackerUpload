@@ -1,0 +1,13 @@
+name: "Question"
+description: "Ask a question about OSMTracker for Android."
+labels: "question"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Questions should be asked in GitHub Discussions!
+        Thank you for your interest in OSMTracker! We encourage users to ask questions in the [Q&A Discussions](https://github.com/labexp/osmtracker-android/discussions/categories/q-a) instead of opening an issue.
+        
+        Please visit the link above and post your question there.
+        
+        If you believe your issue is a bug, please use the **Bug Report** template instead.
