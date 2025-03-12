@@ -1,91 +1,75 @@
-name: "Reporte de Bug"
-description: "Usa esta plantilla para reportar errores en OSMTracker."
-labels: ["bug", "needs-triage"]
-title: "[Bug] Breve descripción del problema"
+name: "Bug Report"
+description: "Report an issue or bug with OSMTracker."
+labels: "bug, needs-triage"
 body:
   - type: markdown
     attributes:
-      value: |
-        ## Gracias por reportar un bug en OSMTracker!
-        Por favor, completa la siguiente información para ayudarnos a diagnosticar el problema.
+      value: "## Thank you for reporting a bug!\nPlease fill out the following details to help us diagnose the issue."
   
-  - type: input
-    id: bug_summary
+  - type: textarea
+    id: description
     attributes:
-      label: "Resumen del Bug"
-      description: "Describe el problema en una línea."
-      placeholder: "La aplicación se cierra al guardar un track."
+      label: "Description"
+      description: "Provide a clear and concise description of the issue."
+      placeholder: "Describe the issue here..."
     validations:
       required: true
-
+  
   - type: textarea
-    id: bug_description
+    id: steps_to_reproduce
     attributes:
-      label: "Descripción del problema"
-      description: "Explica en detalle qué está ocurriendo."
-      placeholder: "Cuando intento guardar un track en formato GPX, la aplicación se cierra inesperadamente."
-    validations:
-      required: true
-
-  - type: textarea
-    id: reproduction_steps
-    attributes:
-      label: "Pasos para reproducir"
-      description: "Describe los pasos necesarios para que ocurra el error."
+      label: "Steps to Reproduce"
+      description: "List the steps to reproduce the issue."
       value: |
-        1. Abro la aplicación
-        2. Inicio la grabación de un track
-        3. Intento guardarlo como GPX
-        4. La aplicación se cierra
+        1. 
+        2. 
+        3. 
+      placeholder: "Step-by-step instructions..."
     validations:
       required: true
-
-  - type: input
-    id: expected_behavior
-    attributes:
-      label: "Comportamiento esperado"
-      description: "Describe qué debería ocurrir en su lugar."
-      placeholder: "El track debería guardarse correctamente."
-    validations:
-      required: true
-
-  - type: input
-    id: actual_behavior
-    attributes:
-      label: "Comportamiento actual"
-      description: "Describe qué ocurre en realidad."
-      placeholder: "La aplicación se cierra sin guardar el track."
-    validations:
-      required: true
-
-  - type: dropdown
-    id: device_info
-    attributes:
-      label: "Información del dispositivo"
-      description: "Selecciona el sistema operativo y modelo del dispositivo donde ocurrió el bug."
-      multiple: false
-      options:
-        - "Android 14 - Google Pixel 7"
-        - "Android 13 - Samsung Galaxy S22"
-        - "Android 12 - Xiaomi Mi 11"
-        - "Otra (especificar en los comentarios)"
-    validations:
-      required: true
-
-  - type: input
-    id: osmtracker_version
-    attributes:
-      label: "Versión de OSMTracker"
-      description: "Indica la versión que estás utilizando."
-      placeholder: "Ejemplo: v1.2.3"
-    validations:
-      required: true
-
+  
   - type: textarea
-    id: additional_info
+    id: logs
     attributes:
-      label: "Información adicional"
-      description: "Si tienes más detalles, logs o capturas de pantalla, agrégalas aquí."
-      placeholder: "Puedes adjuntar capturas de pantalla o registros de errores."
+      label: "Logs or Console Errors (if applicable)"
+      description: "Paste any relevant logs or error messages."
+      render: "plaintext"
     validations:
       required: false
+  
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots or Videos (Optional)"
+      description: "Attach any relevant screenshots or videos."
+    validations:
+      required: false
+  
+  - type: input
+    id: android_version
+    attributes:
+      label: "Android Version"
+      placeholder: "e.g., Android 12"
+    validations:
+      required: true
+  
+  - type: input
+    id: device_model
+    attributes:
+      label: "Device Model"
+      placeholder: "e.g., Samsung Galaxy S21"
+    validations:
+      required: true
+  
+  - type: checkboxes
+    id: submission_checklist
+    attributes:
+      label: "Submission Checklist"
+      description: "Please confirm the following before submitting:"
+      options:
+        - label: "I am reporting an issue, not asking a question."
+          required: true
+        - label: "I have updated to the latest OSMTracker version, and the issue still exists."
+          required: true
+        - label: "I have checked the documentation, Q&A Discussions, and open issues, but did not find a solution."
+          required: false
