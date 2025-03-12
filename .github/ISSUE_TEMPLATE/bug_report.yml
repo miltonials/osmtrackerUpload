@@ -1,0 +1,91 @@
+name: "Reporte de Bug"
+description: "Usa esta plantilla para reportar errores en OSMTracker."
+labels: ["bug", "needs-triage"]
+title: "[Bug] Breve descripción del problema"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Gracias por reportar un bug en OSMTracker!
+        Por favor, completa la siguiente información para ayudarnos a diagnosticar el problema.
+  
+  - type: input
+    id: bug_summary
+    attributes:
+      label: "Resumen del Bug"
+      description: "Describe el problema en una línea."
+      placeholder: "La aplicación se cierra al guardar un track."
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: "Descripción del problema"
+      description: "Explica en detalle qué está ocurriendo."
+      placeholder: "Cuando intento guardar un track en formato GPX, la aplicación se cierra inesperadamente."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: "Pasos para reproducir"
+      description: "Describe los pasos necesarios para que ocurra el error."
+      value: |
+        1. Abro la aplicación
+        2. Inicio la grabación de un track
+        3. Intento guardarlo como GPX
+        4. La aplicación se cierra
+    validations:
+      required: true
+
+  - type: input
+    id: expected_behavior
+    attributes:
+      label: "Comportamiento esperado"
+      description: "Describe qué debería ocurrir en su lugar."
+      placeholder: "El track debería guardarse correctamente."
+    validations:
+      required: true
+
+  - type: input
+    id: actual_behavior
+    attributes:
+      label: "Comportamiento actual"
+      description: "Describe qué ocurre en realidad."
+      placeholder: "La aplicación se cierra sin guardar el track."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device_info
+    attributes:
+      label: "Información del dispositivo"
+      description: "Selecciona el sistema operativo y modelo del dispositivo donde ocurrió el bug."
+      multiple: false
+      options:
+        - "Android 14 - Google Pixel 7"
+        - "Android 13 - Samsung Galaxy S22"
+        - "Android 12 - Xiaomi Mi 11"
+        - "Otra (especificar en los comentarios)"
+    validations:
+      required: true
+
+  - type: input
+    id: osmtracker_version
+    attributes:
+      label: "Versión de OSMTracker"
+      description: "Indica la versión que estás utilizando."
+      placeholder: "Ejemplo: v1.2.3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "Información adicional"
+      description: "Si tienes más detalles, logs o capturas de pantalla, agrégalas aquí."
+      placeholder: "Puedes adjuntar capturas de pantalla o registros de errores."
+    validations:
+      required: false
