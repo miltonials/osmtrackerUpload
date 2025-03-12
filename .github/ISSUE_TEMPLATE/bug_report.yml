@@ -4,7 +4,7 @@ labels: "bug"
 body:
   - type: markdown
     attributes:
-      value: "*Thank you for reporting a bug! Before reporting, please have a look at the [Q&A](https://github.com/labexp/osmtracker-android/discussions/categories/q-a), make sure the issue has no duplicate and hasn't been already addressed by searching through [the existing and past issues](https://github.com/labexp/osmtracker-android/issues).\nPlease fill out the following details to help us diagnose the issue.*"
+      value: "**Thank you for reporting a bug! Before reporting, please have a look at the [Q&A](https://github.com/labexp/osmtracker-android/discussions/categories/q-a), make sure the issue has no duplicate and hasn't been already addressed by searching through [the existing and past issues](https://github.com/labexp/osmtracker-android/issues).\nPlease fill out the following details to help us diagnose the issue.**"
   
   - type: textarea
     id: description
