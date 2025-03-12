@@ -11,3 +11,12 @@ body:
         Please visit the link above and post your question there.
         
         If you believe your issue is a bug, please use the **Bug Report** template instead.
+
+  - type: checkboxes
+    id: redirect_to_discussions
+    attributes:
+      label: "Before proceeding"
+      description: "Please confirm that you understand that questions should be asked in GitHub Discussions."
+      options:
+        - label: "I understand that questions should be asked in [Q&A Discussions](https://github.com/labexp/osmtracker-android/discussions/categories/q-a) and I will post there instead."
+          required: true
