@@ -73,5 +73,5 @@ body:
           required: true
         - label: "I have updated to the latest OSMTracker version, and the issue still exists."
           required: true
-        - label: "I have checked the documentation, Q&A Discussions, and open issues, but did not find a solution."
+        - label: "I have checked the Q&A Discussions, open and closed issues, and the wiki, but did not find a solution."
           required: false
