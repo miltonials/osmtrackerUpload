@@ -22,7 +22,7 @@
 [comment]: # (Make sure how your PR looks clicking the "Preview" tab at the top of this editor)
 
 - [ ] The PR is proposed to the proper branch.
-- [ ] The changes have been tested on different Android versions.
+- [ ] The changes have been tested on the target Android API and minimum Android API.
 - [ ] Automated tests have been added (if applicable).
 - [ ] The feature is well documented.
 - [ ] There is a reference to the original bug report and related work.
